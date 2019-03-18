@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+{% load staticfiles %}
+
+<!--  -->
+<!-- LAYOUT_HEADER -->
+<!--  -->
+
+{% block content %}
+
+        <div class="header-div">
+                <div>
+                    <div>
+                        <img class="logo-contato" src="{% static 'imgs/logo.png' %}" alt="logo GA">
+                    </div>
+                    <div>
+                        <h1>Servicos </h1>
+                    </div>
+                </div>  
+        </div>
+
+        <div class="divAllServicos">
+                <a href="{% url 'poluentes' %}">ALO</a>
+        </div>
+
+{% endblock %}
+
+<!--  -->
+<!-- LAYOUT_FOOTER -->
+<!--  -->

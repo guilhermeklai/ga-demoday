@@ -1,0 +1,231 @@
+{% extends 'layout.html' %}
+{% load staticfiles %}
+
+<!--  -->
+<!-- LAYOUT_HEADER -->
+<!--  -->
+
+{% block content %}
+        
+    <header>
+            <div class="banner">
+                <div>
+                    <img class="logo" src="{% static 'imgs/logo.png' %}" alt="logo GA">
+                </div>
+                <div>
+                    <h1>EMPRESA JÚNIOR DE GESTÃO AMBIENTAL - USP</h1>
+                </div>
+            </div>  
+    </header>
+    <main>
+        <div class="GA-junior">
+            <h2>G.A JÚNIOR</h2>
+            <p>Oferecemos soluções ambientais para que seu negócio seja mais eficiente e sustentável.</p>
+        </div>
+        <div class="main-main">
+            <div class="main-layer" id="edu-amb">
+                <div>
+                    <h2>EDUCAÇÃO AMBIENTAL</h2>
+                </div>
+                <div>
+                    <img src="{% static 'imgs/edu-amb.png' %}" alt="">
+                </div>
+            </div>
+            <div class="main-layer" id=" poluicao">
+                    <div>
+                        <h2>ÍNDICE DE POLUIÇÃO<br>EM SP</h2>
+                    </div>
+                    <div>
+                        <img src="{% static 'imgs/polution.png' %}" alt="">
+                    </div>
+                </div>
+            <div class="main-layer">
+                <div>
+                    <h3>PLANEJAMENTO DE EFICIÊNCIA<br>NA UTILIZAÇÃO DE RECURSOS</h3>
+                </div>
+                <div>
+                    <img src="{% static 'imgs/plan.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="serv-but">
+                <button>Serviços</button>
+        </div>
+    </main>
+
+    <!--  -->
+
+    <div class="somos">
+        <div id="quem-somos">
+            <p> QUEM SOMOS</p>
+        </div>
+        <div id="text-somos">
+            <p>A G.A Júnior é uma empresa especializada em Soluções de Gestão Ambiental, sem fins lucrativos, formada por graduandos do curso de Gestão Ambiental oferecido pela Universidade de São Paulo.
+            <br> <br>
+            Fomos fundados em 2014 e temos como objetivo oferecer desafios aos futuros gestores ambientais, de modo que sejam capazes de empreender em soluções ambientais e socioambientais inovadoras, solucionando os problemas e necessidades dos mais diversos negócios.
+            <br> <br>     
+            Nossa empresa engaja-se por inteiro em cada projeto para que todos obtenham a máxima excelência e efetivo comprometimento com a ética em sustentabilidade.</p>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <section>
+        <div>
+            <div class="infos-sec">
+                <div>
+                    <img src="{% static 'imgs/orientation.png' %}" alt="">
+                </div>
+                <div>
+                    <p>Orientação de professores 
+                    <br>e doutores da USP</p>
+                </div>
+            </div>
+            <div class="infos-sec">
+                <div>
+                    <img src="{% static 'imgs/responsability.png' %}" alt="">
+                </div>
+                <div>
+                    <p>Responsabilidade
+                    <br>e eficiência</p>
+                </div>
+            </div>
+            <div class="infos-sec">
+                <div>
+                    <img src="{% static 'imgs/sustentability.png' %}" alt="">
+                </div>
+                <div>
+                    <p>Soluções inovadoras
+                    <br>e sustentáveis</p>
+                </div>
+            </div>
+            <div class="infos-sec">
+                <div>
+                    <img src="{% static 'imgs/low-price.png' %}" alt="">
+                </div>
+                <div>
+                    <p>Preços abaixo da média
+                    <br> do mercado</p>
+                </div>
+            </div>
+            <div class="infos-sec">
+                <div>
+                    <img src="{% static 'imgs/interdiciplinar.png' %}" alt="">
+                </div>
+                <div>
+                    <p>Conhecimento
+                    <br>interdisciplinar</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="saiba-mais"> Saiba mais </button>
+        </div>
+    </section>
+
+    <!--  -->
+
+    <div id="grad-top"></div>
+    <div class="projetos">
+        <div class="blocos">
+            <div class="projects">
+                    <h2>PROJETOS</h2>
+            </div>
+            <div class="main-bloco">
+                <div class="recicla">
+                    <div class="recicla-over">
+                        <div class="text-projetos">
+                            <a href="{% url '3r' %}"><p>RECICLA USP</p></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="vila">
+                    <div class="vila-over">
+                        <div class="text-projetos">
+                            <p>VILA BUTANTAN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sem-copinhos">
+                    <div class="semcopinhos-over">
+                        <div class="text-projetos">
+                            <p>UM DIA SEM COPINHOS</p>
+                        </div>
+                    </div>       
+                </div>
+            </div>
+            <div class="main-bloco">
+                <div class="pjt-copinhos">
+                    <div class="copinhos-over">
+                        <div class="text-projetos">
+                            <p>PROJETO DOS COPINHOS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="arcgis">
+                    <div class="arcgis-over">
+                        <div class="text-projetos">
+                            <p>CURSO ARCGIS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="each-recicla">
+                    <div class="eachrecicla-over">
+                        <div class="text-projetos">
+                            <p>EACH RECICLA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div id="grad-bottom"></div>
+    <div class="contato">
+        <div>
+            <h3>QUER SABER MAIS SOBRE NOSSOS SERVIÇOS?</h3>
+            <p>Entre em contato com a G.A Jr, esclareça eventuais dúvidas ou contrate nossos serviços.<br> Escreva pra gente! É rápido e fácil!</p>
+        </div>
+        <div class="but">
+            <a href="{% url 'contato' %}"><button class="saiba-mais" >Contato</button></a>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <div class="infos">
+        <div class="infos-redes">
+            <h3>Nossas redes sociais</h3>
+            <div>
+                <a href="https://www.facebook.com/GAJRUSP" target="_blank">
+                <div class="icons">
+                    <img src="{% static 'imgs/facebook.png' %}" alt="Facebook">
+                </div>
+                </a>
+                <div class="entre-icons"></div>
+                <a href="https://www.instagram.com/empresagajr/" target="_blank">
+                <div class="icons">
+                    <img src="{% static 'imgs/instagram.png' %}" alt="Instagram">
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="infos-adress">
+            <div>
+                <h4>G.A Júnior USP - empresajrga@gmail.com</h4>
+            </div>
+            <div>
+                <p>Endereço: Av. Arlindo Béttio, 1000 - Ermelino Matarazzo,<br>São Paulo - SP, 03828-000 <br>Universidade de São Paulo - Campus Leste</p>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
+
+<!--  -->
+<!-- LAYOUT_FOOTER -->
+<!--  -->

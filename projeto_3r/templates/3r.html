@@ -1,0 +1,49 @@
+{% extends 'layout.html' %}
+{% load staticfiles %}
+
+<!--  -->
+<!-- LAYOUT_HEADER -->
+<!--  -->
+
+{% block content %}
+
+        <div class="header-div">
+                <div>
+                    <div>
+                        <img class="logo-contato" src="{% static 'imgs/logo.png' %}" alt="logo GA">
+                    </div>
+                    <div>
+                        <h1>PROJETO 3Rs</h1>
+                    </div>
+                </div>  
+        </div>
+
+        <div class="divAll3r">
+                <div id="div3rs">
+                        <div><img src="{% static 'imgs/3rs.png' %}"></div>
+                        <div><p> 3Rs - Reduzir, Reutilizar, Reciclar</p></div>
+                </div>
+                <div id="divProjeto">
+                        <p>Os 3 Rs da sustentabilidade foram criados para tentar resolver o problema do acumulo de lixo e fazer com que a sociedade, como consumidor tenha uma relação mais harmônica com o Meio Ambiente, ou seja, as pessoas devem pensar antes de consumir mais do que precisam. A única forma de reduzirmos a quantidade de lixo absurda que geramos é deixar de consumir. Dessa forma haverá uma economia, diminuindo o custo de vida e favorecendo o sistema sustentável.</p>
+                        <pre></pre>
+                        <p>Quando falamos de gerar lixo pensamos apenas em embalagens de alimentos que jogamos fora, mas o lixo vai muito mais além. Trata-se de comprar coisas que não terão finalidade e ficará por anos guardados ou até mesmo comprar produtos que não possuem embalagem reciclável.</p>
+                </div>
+                <div id="divReduzir">
+                        <img src="{% static 'imgs/reduzir.png' %}">
+                        <p><b>Reduzir: </b>é a primeira etapa do princípio dos 3R´s (Reduzir, Reutilizar e Reciclar), e consiste em ações que visem à diminuição da geração de resíduos, seja por meio da minimização na fonte ou por meio da redução do desperdício. É a etapa principal, pois sua contribuição promove a minimização de gastos com o gerenciamento e tratamento, e é válido para aplicação a qualquer grupo de resíduos.</p>
+                </div>
+                <div id="divReutilizar">
+                        <img src="{% static 'imgs/reutilizar.png' %}">
+                        <p><b>Reutilizar: </b>é a segunda etapa que pode ser implantada através de ações que possibilitem sua utilização para várias finalidades, otimizar o máximo seu uso antes de descarte final, ou, ainda seu reenvio ao processo produtivo, visando a sua recolocação para o mesmo fim ou recolocação no mercado.</p>
+                </div>
+                <div id="divReciclar">
+                        <img src="{% static 'imgs/reciclar.png' %}">
+                        <p><b>Reciclar: </b>é um conjunto de técnicas que tem por finalidade aproveitar os resíduos, e reutilizá-los no ciclo de produção de que saíram. Materiais que se tornariam lixo, ou estão no lixo, são separados, coletados e processados para serem usados como matéria-prima na manufatura de novos produtos. Reciclar é usar um material para fazer outro.</p>
+                </div>
+        </div>
+
+{% endblock %}
+
+<!--  -->
+<!-- LAYOUT_FOOTER -->
+<!--  -->

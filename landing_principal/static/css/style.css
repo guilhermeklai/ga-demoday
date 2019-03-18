@@ -1,0 +1,969 @@
+body {
+        margin: 0px;
+        font-family: 'Dosis', sans-serif;
+        width: 100%;
+        /* background-color: rgb(245, 255, 238); */
+        background-color: whitesmoke;
+}
+    
+.banner {
+        display: block;
+}
+
+.header-div div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+}
+
+.header-div h1{
+        font-size: 100px;
+}
+    
+nav {
+        background-color: rgb(3, 190, 59);
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        box-shadow: 0px 0.5px #888888;
+}
+    
+nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        text-shadow: 1px 1px rgb(138, 138, 138);
+}
+nav a:hover {
+        text-shadow: 1px 1px rgb(117, 117, 117);
+        color: rgb(233, 233, 233);
+}
+
+.divContatoForm{
+        background-image: radial-gradient(circle,  rgb(196, 240, 203), whitesmoke);
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding-bottom: 100px;
+}
+
+.divContatoForm p{
+        display: flex;
+        align-items: center;
+        color: green;
+        font-size: 35px;
+        width: 650px;
+}
+
+.divContatoForm button{
+        margin-left: 250px;
+        margin-top: 10px;
+        font-size: 45px;
+        font-weight: normal;
+        border-radius: 15px;
+        font-family: 'Dosis', sans-serif;
+}
+
+.divContatoForm input{
+        margin-left: 60px;
+        padding: 12px;
+        border-radius: 12px;
+        width: 400px;
+        font-size: 14pt;
+}
+
+.divContatoForm textarea {
+        margin-left: 15px;
+        resize: none;
+        padding: 12px;
+        border-radius: 12px;
+        font-size: 14pt;
+        width: 400px;
+        height: 50px;
+}
+
+.divContatoForm select {
+        margin-left: 35px;
+        font-size: 25px;
+        padding: 12px;
+        border-radius: 12px;
+        /* background-color: green; */
+}
+
+.divAllProjetos{
+        display: flex;
+        justify-content: center; 
+        align-items:center; 
+}
+.AllProjetos-blocos{
+        padding: 15px 0px;
+        width: 100%;
+        height: 1200px;
+        background-color:rgb(16, 182, 65);
+}
+
+.AllProjetos-flex{
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+}
+
+.AllProjetos-bloco{
+        padding: 10px;
+        display: flex;
+        border-radius: 10px;
+        margin: 0px 15px;
+        width: 45%;
+        height: 320px;
+        background-color: rgb(255, 255, 255);
+}
+
+.blobo-img{
+        height: 320px;
+        display: flex;
+        align-items: center;
+}
+
+.AllProjetos-bloco img{
+        height: 300px;
+        width: 300px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 1px 1px #000000;   
+}
+
+.bloco-text{
+        display: block;
+        height: 320px;
+}
+.blocoh2{
+        text-align: center;
+        font-size: 40px;
+        margin: 10px 0px 20px 0px;
+}
+.h2-bloco{
+        text-align: center;
+        font-size: 31px;
+        margin: 10px 0px 20px 0px;
+}
+.bloco-text p{
+        font-size: 20px;
+        text-align: center;
+}
+.btt-bloco{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 10px;
+
+}
+    
+.grid {
+        grid-area: grid;
+        grid-auto-rows: 435px 400px 350px 300px 300px 150px;
+        grid-template-areas: 
+        "header",
+        "main",
+        "section",
+        "somos",
+        "projetos",
+        "footer";
+}
+    
+header {
+        grid-area: header;
+        height: 500px;
+}
+    
+header div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;  
+}
+    
+.logo {
+        margin-top: 50px;
+        width: auto;
+        height: 300px;
+}
+
+.logo-contato {
+        /* margin-top: 50px; */
+        width: auto;
+        height: 300px;
+}
+    
+div h1 {
+        color:  rgb(16, 182, 65);
+        font-size: 40px;
+        text-shadow: 1.5px 1.5px rgb(163, 163, 163);
+}
+    
+div h1:hover {
+        cursor: default;
+}
+    
+main {
+        background-image: url(../imgs/banner-main.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 550px;
+        grid-area: main;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+}
+    
+.GA-junior {
+        background-color: rgba(0, 0, 0, 0.432);
+        flex-wrap: wrap;
+}
+.GA-junior h2 {
+        padding-top: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 3em;
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 1.5px 1.5px rgb(53, 53, 53);
+}
+.GA-junior p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 1.5em;
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 1.5px 1.5px rgb(53, 53, 53);
+}
+    
+.main-main {
+        background-color: rgba(0, 0, 0, 0.432);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 360px;
+}
+    
+.main-layer {
+        width: 550px;
+        height: auto;
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0px 10px 0px 10px;  
+        border-radius: 10px;
+        padding: 10px;
+}
+.main-layer:hover {
+        cursor: pointer;
+        transition: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-property: initial; 
+        background-color:  rgba(0, 0, 0, 0.315);
+}
+    
+.main-layer div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+    
+#edu-amb {
+        margin-top: 10px;
+        padding: 10px 20px 10px 0px;
+}
+    
+#poluicao {
+        margin-top: 10px;
+        padding: 20px 20px 20px 20px;
+}
+    
+.main-layer img {
+        height: 150px;
+        width: auto;
+}
+    
+.main-layer h2 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 1.5px 1.5px rgb(53, 53, 53);
+}
+    
+.main-layer h3 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: 1.5px 1.5px rgb(53, 53, 53);
+}
+    
+.serv-but {
+        padding-bottom: 20px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.432);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+    
+.serv-but button {
+        border-radius: 5px;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 7px 15px;
+        font-size: 25px;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(255, 255, 255);
+}
+.serv-but button:hover {
+        color: rgb(16, 182, 65);
+        background-color: rgb(255, 255, 255);
+}
+
+.btn-contato {
+        border-radius: 5px;
+        border: 1px solid black;
+        padding: 7px 15px;
+        font-size: 25px;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.774);
+        color: black;
+}
+.btn-contato:hover {
+        color: rgb(16, 182, 65);
+        border: 1px solid rgb(16, 182, 65);
+        background-color: rgb(255, 255, 255);
+}
+    
+.somos {
+        grid-area: somos;
+        height: 480px;
+        display: block;
+}
+    
+#quem-somos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+#quem-somos p {
+        font-weight: bolder;
+        font-size: 2.5em;
+        color: rgb(92, 90, 90);
+        text-shadow: 1px 1px rgb(49, 49, 49);
+    
+}
+    
+#text-somos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 50px 30px 50px;
+}
+#text-somos p {
+        font-size: 1.5em;
+        color: rgb(92, 90, 90);
+}
+    
+section {
+        grid-area: section;
+        height: 300px;
+}
+section div {
+        padding-top: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.infos-sec {
+        display: block;
+}
+    
+.infos-sec div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+    
+.infos-sec p {
+        font-weight: bolder;
+}
+    
+.saiba-mais {
+        border-radius: 5px;
+        border: 1px solid rgb(16, 182, 65);
+        padding: 7px 15px;
+        font-size: 25px;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(16, 182, 65);
+}
+.saiba-mais:hover {
+        color: rgb(255, 255, 255);
+        background-color: rgba(17, 184, 67, 1);
+}
+    
+    
+.projetos {
+        background-image: linear-gradient(to right, rgba(16, 182, 65, 0.9), rgba(9, 121, 43, 0.7));
+        grid-area: projetos;
+        height: 600px;
+}
+    
+.main-bloco {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 150px;
+        margin-bottom: 75px;
+        margin-top: 20px;
+}
+    
+.bloco {
+        background-color: white;
+        height: 199px;
+        width: 199px;
+        margin: 10px;
+        border-radius: 25px;
+        box-shadow: 2px 2px #000000;
+}
+.bloco:hover {
+        cursor: pointer;
+}
+.recicla {
+        background-size: cover;
+        background-image: url(../imgs/recicla-front.png);
+        height: 199px;
+        width: 199px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 1px 1px #000000;
+        text-decoration: none;
+}
+.text-projetos p {
+        padding: 30px 0px;
+        margin: 0px;
+}
+
+.text-projetos a {
+        text-decoration: none;
+}
+
+.recicla-over{
+        background-size: cover;
+        height: 199px;
+        width: 199px;
+        /* margin: 10px; */
+        border-radius: 15px;
+        box-shadow: 1px 1px #000000;
+}
+.recicla-over:hover {
+        /* transition: 0.5s; */
+        transition: all 0.5s ease;
+        background-image: url(../imgs/recicla-front1.png);
+        cursor: pointer;
+}
+    
+.vila {
+        background-size: cover;
+        background-image: url(../imgs/vila-butanta.png);
+        height: 199px;
+        width: 199px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 1px 1px #000000;
+}
+.vila-over{
+        background-size: cover;
+        height: 199px;
+        width: 199px;
+        /* margin: 10px; */
+        border-radius: 15px;
+        box-shadow: 1px 1px #000000;
+}
+.vila-over:hover {
+        /* transition: 0.5s; */
+        transition: all 0.5s ease;
+        background-image: url(../imgs/vila-butanta1.png);
+        cursor: pointer;
+}
+    
+.sem-copinhos {
+        background-size: cover;
+        background-image: url(../imgs/sem-copinhos.png);
+        height: 199px;
+        width: 199px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 1px 1px #000000;
+}
+.semcopinhos-over{
+        background-size: cover;
+        height: 199px;
+        width: 199px;
+        /* margin: 10px; */
+        border-radius: 15px;
+        box-shadow: 1px 1px #000000;
+}
+.semcopinhos-over:hover {
+        /* transition: 0.5s; */
+        transition: all 0.5s ease;
+        background-image: url(../imgs/sem-copinhos1.png);
+        cursor: pointer;
+}
+    
+.pjt-copinhos {
+        background-size: cover;
+        background-image: url(../imgs/pjt-copinhos.png);
+        height: 199px;
+        width: 199px;
+        margin-right: 0px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 1px 1px #000000;
+}
+.copinhos-over{
+        background-size: cover;
+        height: 199px;
+        width: 199px;
+        /* margin: 10px; */
+        border-radius: 15px;
+        box-shadow: 1px 1px #000000;
+}
+.copinhos-over:hover {
+        /* transition: 0.5s; */
+        transition: all 0.5s ease;
+        background-image: url(../imgs/pjt-copinhos1.png);
+        cursor: pointer;
+}
+    
+.arcgis {
+        background-size: cover;
+        background-image: url(../imgs/argis.png);
+        height: 199px;
+        width: 199px;
+        margin-left: 0px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 1px 1px #000000;
+}
+.arcgis-over{
+        background-size: cover;
+        height: 199px;
+        width: 199px;
+        /* margin: 10px; */
+        border-radius: 15px;
+        box-shadow: 1px 1px #000000;
+}
+.arcgis-over:hover {
+        /* transition: 0.5s; */
+        transition: all 0.5s ease;
+        background-image: url(../imgs/argis1.png);
+        cursor: pointer;
+}
+
+.each-recicla {
+        background-size: cover;
+        background-image: url(../imgs/each-recicla.png);
+        height: 199px;
+        width: 199px;
+        margin-left: 0px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 1px 1px #000000;
+}
+.eachrecicla-over{
+        background-size: cover;
+        height: 199px;
+        width: 199px;
+        /* margin: 10px; */
+        border-radius: 15px;
+        box-shadow: 1px 1px #000000;
+}
+.eachrecicla-over:hover {
+        /* transition: 0.5s; */
+        transition: all 0.5s ease;
+        background-image: url(../imgs/each-recicla1.png);
+        cursor: pointer;
+}
+    
+.main-bloco p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 149px;
+        text-align: center;
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0);
+        text-shadow: 1px 1px rgba(255, 251, 251, 0);
+}
+.main-bloco p:hover {
+        color:rgba(255, 255, 255, 1);
+        text-shadow: 1px 1px rgb(133, 131, 131);
+        transition: 1s;
+}
+    
+.bloco img {
+        height: 199.5px;
+        width: auto;
+        border-radius: 25px;
+}
+    
+.projects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+    
+.blocos h2 {
+        text-shadow: 1.5px 1.5px rgb(49, 49, 49);
+        color: white;
+        font-size: 3em
+}
+    
+.blocos h2:hover {
+        cursor: default;
+}
+    
+.contato {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+}
+.contato h3 {
+        font-weight: bolder;
+        font-size: 27px;
+}
+.contato p {
+        font-weight: bold;
+        color: #302f2f;
+}
+.but {
+        margin-left:90px;
+}
+    
+.infos {
+        background-image: linear-gradient(to right, rgb(16, 182, 65), rgb(9, 121, 43));
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+}
+.infos p {
+        color: rgb(226, 226, 226);
+        font-size: 17px;
+        font-weight: bold;
+        text-shadow: 0.2px 0.2px rgb(37, 37, 37);
+}
+    
+.infos-redes div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.infos-redes h3 {
+        text-shadow: 0.2px 0.2px rgb(37, 37, 37);
+        color: rgb(226, 226, 226);
+        margin: 0px;
+        font-size: 27px;
+}
+.infos-redes p {
+        text-shadow: 0.2px 0.2px rgb(37, 37, 37);
+        color: rgb(226, 226, 226);
+        font-size: 18px;
+}
+    
+.infos-adress h4 {
+        text-shadow: 0.2px 0.2px rgb(37, 37, 37);
+        color: rgb(226, 226, 226);
+        margin: 0px;
+        font-size: 20px;
+}
+.infos-adress p {
+        text-shadow: 0.2px 0.2px rgb(37, 37, 37);
+        color: rgb(226, 226, 226);
+        margin-top: 10px;
+}
+    
+.icons {
+        background-color: rgb(190, 190, 190);
+        padding: 7px;
+        border-radius: 25px;
+        /* margin-top: 10px; */
+        /* margin-right: 10px; */
+}
+.icons:hover {
+        cursor: pointer;
+        transition: 0.8s;
+        background-color: rgb(48, 48, 48);
+}
+    
+.icons img {
+        width: auto;
+        height: 20px;
+}
+    
+.entre-icons {
+        width: 10px;
+        height: 44px;
+}
+
+footer {
+        /* height: 30px; */
+        background-color: rgb(255, 250, 233);
+        display: flex;
+        justify-content: center;
+        width: 100%;   
+}
+    
+.footer-space {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+        padding: 2px;
+        width: 50%;
+}
+    
+.footer-space a {
+        color: rgb(92, 90, 90);
+        font-family: sans-serif;
+        font-size: 11pt;
+        text-decoration: none;  
+}
+    
+.footer-space a:hover {
+        color: rgb(16, 182, 65);
+}
+
+.indice-verde {
+       background-color:  green; 
+       border-radius: 5px;
+}
+
+.indice-amarelo {
+       background-color:  yellow;
+       border-radius: 5px;
+}
+
+.indice-laranja {
+       background-color:  orange;
+       border-radius: 5px;
+}
+
+.indice-vermelho {
+       background-color:  red;
+       border-radius: 5px;
+}
+
+.indice-roxo {
+       background-color:  purple;
+       border-radius: 5px;
+}
+
+.indice-marrom {
+       background-color:  brown;
+       border-radius: 5px;
+}
+
+.divAllContent{
+        display: grid;
+        grid-template-areas: 'estacao estacao'
+                             'substancias particulas'
+                             'outras condicao'
+                             'legenda legenda';
+        /* margin:  10px 100px 10px 100px; */
+        padding:  10px 100px 10px 100px;
+        font-size: 1.5em;
+}
+
+#divEstacao {
+        grid-area: estacao;
+}
+
+#divSubstancias {
+        grid-area: substancias;
+}
+
+#divParticulas {
+        grid-area: particulas;
+}
+
+#divOutras {
+        grid-area: outras;
+}
+
+#divCondicao {
+        grid-area: condicao;
+}
+
+#divLegenda {
+        grid-area: legenda;
+        margin: 15px 0px;
+}
+
+.tabelaLegenda {
+        border-collapse: collapse;
+        margin-bottom: 10px;
+}
+
+.tabelaLegenda th, td {
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0px;
+}
+
+.tabelaLegenda tr:hover { background-color: rgba(0, 0, 0, 0.02); }
+
+.tabelaLegenda #th1 {
+        width: 2%;
+}
+
+.tabelaLegenda #th2 {
+        width: 18%;
+}
+
+.tabelaLegenda #th3 {
+        width: 22%;
+}
+
+.tabelaLegenda #th4 {
+        width: 58%;
+}
+
+#legendaVerde {
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        background-color: green;
+        margin-left: 10px;
+}
+
+#legendaAmarela {
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        background-color: yellow;
+        margin-left: 10px;
+}
+
+#legendaLaranja {
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        background-color: orange;
+        margin-left: 10px;
+}
+
+#legendaVermelha {
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        background-color: red;
+        margin-left: 10px;
+}
+
+#legendaRoxa {
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        background-color: purple;
+        margin-left: 10px;
+}
+
+#legendaMarrom {
+        width: 15px;
+        height: 15px;
+        border-radius: 10px;
+        background-color: brown;
+        margin-left: 10px;
+}
+
+.divAll3r{
+        display: grid;
+        grid-template-areas: '3rs'
+                             'projeto'
+                             'reduzir'
+                             'reutilizar'
+                             'reciclar';
+        /* margin:  10px 100px 10px 100px; */
+        /* padding:  10px 100px 10px 100px; */
+        font-size: 1.5em;
+}
+
+.divAll3r b {
+        color: green;
+}
+
+#div3rs {
+        grid-area: 3rs;
+        background-color: #E8E8E8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+#divProjeto {
+        grid-area: projeto;
+        margin: 15px 200px 15px 200px;
+}
+
+#divReduzir {
+        border: green solid 2px;
+        border-radius: 30px;
+        display: flex;
+        grid-area: reduzir;
+        margin: 15px 200px 15px 200px;
+}
+
+#divReduzir:hover { background-color: rgba(0, 0, 0, 0.02); }
+
+#divReutilizar {
+        border: green solid 2px;
+        border-radius: 30px;
+        display: flex;
+        grid-area: reutilizar;
+        margin: 15px 200px 15px 200px;
+}
+
+#divReutilizar:hover { background-color: rgba(0, 0, 0, 0.02); }
+
+#divReciclar {
+        border: green solid 2px;
+        border-radius: 30px;
+        display: flex;
+        grid-area: reciclar;
+        margin: 15px 200px 15px 200px;;
+}
+
+#divReciclar:hover { background-color: rgba(0, 0, 0, 0.03); }
+
+.divAll3r img {
+        height: 100px;
+        width: 100px;
+        border-radius: 15px;
+        margin: 30px 15px 0px 15px;
+}
+
+#div3rs div img {
+        height: 50px;
+        width: 50px;
+        border-radius: 15px;
+        margin: 5px;
+}

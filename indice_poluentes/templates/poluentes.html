@@ -1,0 +1,105 @@
+{% extends 'layout.html' %}
+{% load staticfiles %}
+
+<!--  -->
+<!-- LAYOUT_HEADER -->
+<!--  -->
+
+{% block content %}
+
+        <div class="header-div">
+                <div>
+                    <div>
+                        <img class="logo-contato" src="{% static 'imgs/logo.png' %}" alt="logo GA">
+                    </div>
+                    <div>
+                        <h1>INDICE DE POLUENTES</h1>
+                    </div>
+                </div>  
+        </div>
+
+        <div class="divAllContent">
+                <div id="divEstacao">
+                        <p id="estacao">Dados Obtidos pela estação: </p>
+                        <p id="city">Cidade: </p>
+                        <p id="consultado">Consultado em: </p>
+                </div>
+                <div id="divSubstancias">
+                        <p>Monóxido de Carbono (CO) <progress id="COprogress"value="" max="100"></progress></p>
+                        <p>Dióxido de Nitrogenio (NO2) <progress id="NO2progress"value="" max="100"></progress></p>
+                        <p>Dióxido de Enxofre (SO2) <progress id="SO2progress"value="" max="10"></progress></p>
+                        <p>Fósforo (P) <progress id="Pprogress"value="" max="10000"></progress></p>
+                </div>
+                <div id="divParticulas">
+                        <p>Indice Geral: <span id="indice"></span><span id="indiceText"></span></p>
+                        <p>Particulas Inaláveis: </p>
+                        <p id="pm25">Finas: </p>
+                        <p id="pm10">Grossas: </p>
+                </div>
+                <div id="divOutras">
+                        <p>Outras Substâncias: </p>
+                        <p id="h">Hidrogenio (H): </p>
+                        <p id="o3">Ozonio (O3): </p>
+                        <p id="w">Tugstenio (W): </p>
+                </div>
+                <div id="divCondicao">
+                        <p id="temp">Temperatura (C˚): </p>
+                        <p id="humidade">Humidade: </p>
+                        <p id="condicaoAtual">Condição: </p>
+                        <p id="velocidadeVento">Velocidade do Vento: </p>
+                </div>
+                <div id="divLegenda">
+                        <table class="tabelaLegenda">
+                                <thead>
+                                        <th id="th1"> </th>
+                                        <th id="th2">AQI (Air Quality Index)</th>
+                                        <th id="th3">Nivel de Poluição no Ar</th>
+                                        <th id="th4">Implicações a Saúde</th>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                                <td><div id="legendaVerde"></div></td>
+                                                <td>0 - 50</td>
+                                                <td>Bom</td>
+                                                <td>A qualidade do ar é considerada satisfatória e a poluição do ar representa pouco ou nenhum risco</td>
+                                        </tr>
+                                        <tr>
+                                                <td><div id="legendaAmarela"></div></td>
+                                                <td>51 - 100</td>
+                                                <td>Moderado</td>
+                                                <td>A qualidade do ar é aceitável; no entanto, para alguns poluentes, pode haver um problema de saúde moderado para um número muito pequeno de pessoas que são incomumente sensíveis à poluição do ar.</td>
+                                        </tr>
+                                        <tr>
+                                                <td><div id="legendaLaranja"></div></td>
+                                                <td>101 - 150</td>
+                                                <td>Insalubre para Grupos Sensíveis</td>
+                                                <td>Membros de grupos sensíveis podem sofrer efeitos na saúde. O público em geral não é susceptível de ser afetado.</td>
+                                        </tr>
+                                        <tr>
+                                                <td><div id="legendaVermelha"></div></td>
+                                                <td>151 - 200</td>
+                                                <td>Insalubre</td>
+                                                <td>Todos podem começar a sentir efeitos na saúde; membros de grupos sensíveis podem sofrer efeitos mais sérios sobre a saúde.</td>
+                                        </tr>
+                                        <tr>
+                                                <td><div id="legendaRoxa"></div></td>
+                                                <td>201 - 300</td>
+                                                <td>Muito Insalubre</td>
+                                                <td>Advertências de saúde de condições de emergência. Toda a população tem mais probabilidade de ser afetada.</td>
+                                        </tr>
+                                        <tr>
+                                                <td><div id="legendaMarrom"></div></td>
+                                                <td>300 +</td>
+                                                <td>Perigoso</td>
+                                                <td>Alerta de saúde: todos podem experimentar efeitos mais graves para a saúde</td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                </div>
+        </div>
+
+{% endblock %}
+
+<!--  -->
+<!-- LAYOUT_FOOTER -->
+<!--  -->
