@@ -19,8 +19,9 @@ from landing_principal.views import render_index
 from contato_page.views import adicionar_contato
 from indice_poluentes.views import retorna_poluentes
 from projeto_intermediario.views import retorna_projeto_intermediario
-from servicos_intermediario.views import retorna_projeto_intermediario
+from servicos_intermediario.views import retorna_servicos_intermediario
 from projeto_3r.views import retorna_3r
+from quem_somos.views import retorna_quem_somos
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,6 +29,7 @@ urlpatterns = [
     path('contato/', adicionar_contato, name='contato'),
     path('indice_poluentes/', retorna_poluentes, name='poluentes'),
     path('projetos/', retorna_projeto_intermediario, name='projetos'),
-    path('servicos/', retorna_projeto_intermediario, name='servicos'),
+    path('servicos/', retorna_servicos_intermediario, name='servicos'),
     path('projeto_3r/', retorna_3r, name='3r'),
+    path('quem_somos/', retorna_quem_somos, name='3r'),
 ]
