@@ -1,6 +1,7 @@
 body {
         margin: 0px;
         font-family: 'Dosis', sans-serif;
+        font-size: 2vw;
         width: 100%;
         /* background-color: rgb(245, 255, 238); */
         background-color: whitesmoke;
@@ -9,7 +10,9 @@ body {
 .banner {
         display: block;
 }
-
+.header-div{
+        height: 250px;
+}
 .header-div div{
         display: flex;
         align-items: center;
@@ -17,7 +20,7 @@ body {
 }
 
 .header-div h1{
-        font-size: 100px;
+        font-size: 3.5em;
 }
     
 nav {
@@ -34,7 +37,7 @@ nav {
 nav a {
         text-decoration: none;
         color: white;
-        font-size: 25px;
+        font-size: 30px;
         font-weight: bold;
         text-shadow: 1px 1px rgb(138, 138, 138);
 }
@@ -102,12 +105,11 @@ nav a:hover {
 .AllProjetos-blocos{
         padding: 15px 0px;
         width: 100%;
-        height: 1200px;
-        background-color:rgb(16, 182, 65);
+        height: 1400px;
 }
 
 .AllProjetos-flex{
-        height: 400px;
+        height: 30%;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -117,10 +119,22 @@ nav a:hover {
         padding: 10px;
         display: flex;
         border-radius: 10px;
-        margin: 0px 15px;
+        margin: 15px 15px;
         width: 45%;
-        height: 320px;
+        height: 330px;
         background-color: rgb(255, 255, 255);
+        box-shadow: 1px 1px #d8d7d7;   
+}
+
+.Allservicos-bloco{
+        padding: 10px;
+        display: flex;
+        border-radius: 10px;
+        margin: 2.5% 30px;
+        width: 95%;
+        height: 330px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 1px 1px #d8d7d7;   
 }
 
 .blobo-img{
@@ -134,25 +148,34 @@ nav a:hover {
         width: 300px;
         margin: 10px;
         border-radius: 15px;
-        box-shadow: 1px 1px #000000;   
+        box-shadow: 0.5px 0.5px #000000;   
 }
+
+.Allservicos-bloco img{
+        height: 300px;
+        width: 300px;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 0.5px 0.5px #000000;   
+}
+
 
 .bloco-text{
         display: block;
-        height: 320px;
+        height: 310px;
 }
 .blocoh2{
         text-align: center;
-        font-size: 40px;
+        font-size: 1.3em;
         margin: 10px 0px 20px 0px;
 }
 .h2-bloco{
         text-align: center;
-        font-size: 31px;
+        font-size: 1.7rem;
         margin: 10px 0px 20px 0px;
 }
 .bloco-text p{
-        font-size: 20px;
+        font-size: 0.7em;
         text-align: center;
 }
 .btt-bloco{
@@ -161,6 +184,17 @@ nav a:hover {
         justify-content: flex-end;
         padding-right: 10px;
 
+}
+
+.divAllServicos{
+        height: 1300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.servicos-block{
+        display: block;
 }
     
 .grid {
@@ -200,7 +234,7 @@ header div {
     
 div h1 {
         color:  rgb(16, 182, 65);
-        font-size: 40px;
+        font-size: 2em;
         text-shadow: 1.5px 1.5px rgb(163, 163, 163);
 }
     
@@ -209,12 +243,13 @@ div h1:hover {
 }
     
 main {
+        background-attachment: fixed;
         background-image: url(../imgs/banner-main.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         width: 100%;
-        height: 550px;
+        height: 100%;
         grid-area: main;
         flex-direction: row;
         align-items: center;
@@ -229,15 +264,15 @@ main {
         padding-top: 20px;
         margin-top: 0px;
         margin-bottom: 0px;
-        font-size: 3em;
+        font-size: 2.2em;
         text-align: center;
         color: whitesmoke;
         text-shadow: 1.5px 1.5px rgb(53, 53, 53);
 }
 .GA-junior p {
-        margin-top: 0px;
+        margin-top: 10px;
         margin-bottom: 0px;
-        font-size: 1.5em;
+        font-size: 1.3em;
         text-align: center;
         color: whitesmoke;
         text-shadow: 1.5px 1.5px rgb(53, 53, 53);
@@ -260,6 +295,18 @@ main {
         margin: 0px 10px 0px 10px;  
         border-radius: 10px;
         padding: 10px;
+}
+.main-img{
+        height: 100%;
+        width: 40%;
+}
+.main-img2{
+        height: 100%;
+        width: 40%;
+}
+.main-img3{
+        height: 100%;
+        width: 40%;
 }
 .main-layer:hover {
         cursor: pointer;
@@ -285,15 +332,10 @@ main {
         padding: 20px 20px 20px 20px;
 }
     
-.main-layer img {
-        height: 150px;
-        width: auto;
-}
-    
 .main-layer h2 {
         margin-top: 10px;
         margin-bottom: 20px;
-        font-size: 1.8em;
+        font-size: 1.2em;
         text-align: center;
         color: whitesmoke;
         text-shadow: 1.5px 1.5px rgb(53, 53, 53);
@@ -302,7 +344,7 @@ main {
 .main-layer h3 {
         margin-top: 10px;
         margin-bottom: 20px;
-        font-size: 1.5em;
+        font-size: 1.2em;
         text-align: center;
         color: whitesmoke;
         text-shadow: 1.5px 1.5px rgb(53, 53, 53);
@@ -310,7 +352,6 @@ main {
     
 .serv-but {
         padding-bottom: 20px;
-        height: 60px;
         background-color: rgba(0, 0, 0, 0.432);
         display: flex;
         align-items: center;
@@ -348,7 +389,7 @@ main {
     
 .somos {
         grid-area: somos;
-        height: 480px;
+        height: 20%;
         display: block;
 }
     
@@ -356,10 +397,11 @@ main {
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100px;
 }
 #quem-somos p {
         font-weight: bolder;
-        font-size: 2.5em;
+        font-size: 2em;
         color: rgb(92, 90, 90);
         text-shadow: 1px 1px rgb(49, 49, 49);
     
@@ -372,13 +414,15 @@ main {
         padding: 0px 50px 30px 50px;
 }
 #text-somos p {
-        font-size: 1.5em;
+        font-size: 1.2em;
         color: rgb(92, 90, 90);
 }
     
 section {
         grid-area: section;
-        height: 300px;
+        width: 100%;
+        height: 30%;
+        padding-bottom: 20px;
 }
 section div {
         padding-top: 7px;
@@ -393,14 +437,32 @@ section div {
 .infos-sec div {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         text-align: center;
-        margin-left: 10px;
         margin-right: 10px;
-}
-    
+}   
 .infos-sec p {
         font-weight: bolder;
+}
+.sec-img{
+        height: 100%;
+        width: 50%;
+}
+.sec-img2{
+        height: 100%;
+        width: 80%;
+}
+.sec-img3{
+        height: 100%;
+        width: 70%;
+}
+.sec-img4{
+        height: 100%;
+        width: 64%;
+}
+.sec-img5{
+        height: 100%;
+        width: 100%;
 }
     
 .saiba-mais {
@@ -419,9 +481,9 @@ section div {
     
     
 .projetos {
-        background-image: linear-gradient(to right, rgba(16, 182, 65, 0.9), rgba(9, 121, 43, 0.7));
+        background-image: linear-gradient(to right, rgba(16, 182, 65, 0.9), rgba(15, 155, 61, 0.7));
         grid-area: projetos;
-        height: 600px;
+        height: 50%;
 }
     
 .main-bloco {
@@ -632,7 +694,7 @@ section div {
 .blocos h2 {
         text-shadow: 1.5px 1.5px rgb(49, 49, 49);
         color: white;
-        font-size: 3em
+        font-size: 2em
 }
     
 .blocos h2:hover {
@@ -658,7 +720,7 @@ section div {
 }
     
 .infos {
-        background-image: linear-gradient(to right, rgb(16, 182, 65), rgb(9, 121, 43));
+        background-image: linear-gradient(to right, rgba(16, 182, 65, 0.9), rgba(15, 155, 61, 0.7));
         height: 150px;
         display: flex;
         align-items: center;
@@ -790,7 +852,7 @@ footer {
                              'legenda legenda';
         /* margin:  10px 100px 10px 100px; */
         padding:  10px 100px 10px 100px;
-        font-size: 1.5em;
+        font-size: 1.2em;
 }
 
 #divEstacao {

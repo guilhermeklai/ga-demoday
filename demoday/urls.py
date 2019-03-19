@@ -31,5 +31,5 @@ urlpatterns = [
     path('projetos/', retorna_projeto_intermediario, name='projetos'),
     path('servicos/', retorna_servicos_intermediario, name='servicos'),
     path('projeto_3r/', retorna_3r, name='3r'),
-    path('quem_somos/', retorna_quem_somos, name='3r'),
+    path('quem_somos/', retorna_quem_somos, name='quem_somos'),
 ]
