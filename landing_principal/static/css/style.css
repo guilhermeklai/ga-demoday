@@ -220,22 +220,22 @@ header div {
         align-items: center;  
 }
     
-.logo {
-        margin-top: 50px;
-        width: auto;
-        height: 300px;
+.banner .logo {
+        margin-top: 25px;
+        width: 28%;
+        height: 30%;
 }
 
 .logo-contato {
-        /* margin-top: 50px; */
-        width: auto;
-        height: 300px;
+        margin-top: 15px;
+        width: 90%;
+        height: auto;
 }
     
 div h1 {
         color:  rgb(16, 182, 65);
         font-size: 2em;
-        text-shadow: 1.5px 1.5px rgb(163, 163, 163);
+        text-shadow: 1.5px 1.5px rgb(177, 177, 177);
 }
     
 div h1:hover {
@@ -1029,3 +1029,50 @@ footer {
         border-radius: 15px;
         margin: 5px;
 }
+
+.divAllQuemSomos{
+        height: 100%;
+        width: 100%;
+        display: block;
+    }
+    .somos-img{
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 20%;
+        grid-area: main;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-image: url(https://cdn-cv.r4you.co/wp-content/uploads/2016/08/arvores_comunicacao.jpg);   
+    }
+    .somos-img h2{
+            color: rgb(240, 240, 240);
+            text-shadow: 1.5px 1.5px rgb(138, 138, 138);
+            font-size: 3.5em;
+    }
+    .divAllQuemSomos div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .divAllQuemSomos img{
+        width: 75%;
+        height: auto;;
+    }
+    
+    #text-somos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 50px 30px 50px;
+    }
+    #text-somos p {
+        font-size: 1.2em;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+    
